@@ -8,11 +8,11 @@ Python implementation of HR-pQCT timelapse analysis for quantifying bone formati
 
 In this implementation of timelapse HR-pQCT, noise reduction is achieved by Gaussian smoothing, instead of the common minimum cluster size filtering. Our results showed better performance (*i.e., smaller errors and noise, higher sensitivity*) compared to other methods.
 
-The image below shows exmaples of the timelapse HR-pQCT using the Gaussian smoothing (*left column*) compared to minimum cluster size filtering (*details in the paper*):
+The image below shows examples of the timelapse HR-pQCT using the Gaussian smoothing (*left column*) compared to minimum cluster size filtering (*details in the paper*):
 
-![Visual example of timelapse HR-pQCT using with and without Gaussian smoothing](images/Figure S3.jpg)
+![Visual examples of timelapse HR-pQCT with and without Gaussian smoothing](https://github.com/user-attachments/assets/64cea84f-8e35-4f7f-913f-9642596ce6b9)
 
-This package can perform timelapse analysis using either grayscale or binary input images. However, the grayscale method is recommended considering significantly lower errors. For the grayscale method, the following configurations are recommended (*details in the paper*):
+This package can perform timelapse analysis using either grayscale or binary input images. However, the grayscale method is recommended, considering significantly lower errors. For the grayscale method, the following configurations are recommended (*details in the paper*):
 - **Input image type:** Grayscale
 - **Density threshold:** 200 mgHA/ccm
 - **Minimum cluster size:** 0
@@ -34,9 +34,9 @@ This package can perform timelapse analysis using either grayscale or binary inp
 	
 ## Dataset Preparation
 
-This package requires the following inputs Scanco generated AIM files of scan pairs that have been aligned using 3D registration in IPL.
+This package requires the following Scanco-generated AIM files of scan pairs as inputs, aligned and segmented using IPL.
 
-The scan pairs that need to be analyzed should be stored in a parent folder, each in a subfolder that preferable indicates anatomical site in the subfolder name.
+The scan pairs that need to be analyzed should be stored in a parent folder, each in a subfolder that preferably indicates anatomical site in the subfolder name.
 
 ```
 parent_folder/
