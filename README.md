@@ -69,12 +69,12 @@ To install this package manually:
 
 1. Download or clone the repository:
    ```bash
-   git clone https://github.com/BWillieLab/Timelapse_HRpQCT.git
+   git clone https://github.com/BWillieLab/Timelapse-HRpQCT.git
    ```
 
 2. Go to the project folder:
    ```bash
-   cd Timelapse_HRpQCT
+   cd Timelapse-HRpQCT
    ```
 
 3. Run your Python script as usual:
