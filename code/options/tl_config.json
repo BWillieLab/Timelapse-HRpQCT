@@ -1,0 +1,18 @@
+{
+  "parent_folder": "/path/to/parent_folder",
+  "parameters": {
+    "timepoint1": "Bsl",
+    "timepoint2": "6M",
+    "sigma": 1.2,
+    "component": "Total",
+    "mask": "same",
+    "cort_mask": "na",
+    "cort_surface": "na",
+    "thresh": 200,
+    "cluster": 0,
+    "roi_begin": 0,
+    "roi_ending": 0,
+    "image_repo": "/path/to/image_repo",
+    "csv_dir": "/path/to/csv_file"
+  }
+}
