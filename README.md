@@ -4,9 +4,9 @@
 
 Python implementation of HR-pQCT timelapse analysis for quantifying bone formation and resorption:
 
-***S. Hosseinitabatabaei et al, Non-invasive quantification of bone (re)modeling dynamics in adults with osteogenesis imperfecta treated with setrusumab using timelapse high-resolution peripheral-quantitative computed tomography, JBMR, 2025 \[(https://academic.oup.com/jbmr/article/40/3/348/7978263)\]***
+***S. Hosseinitabatabaei, I. Vitienes, M. Rummler, A. Birkhold, F.Rauch, BM. Willie, Non-invasive quantification of bone (re)modeling dynamics in adults with osteogenesis imperfecta treated with setrusumab using timelapse high-resolution peripheral-quantitative computed tomography, JBMR, 2025 \[(https://academic.oup.com/jbmr/article/40/3/348/7978263)\]***
 
-In this implementation of timelapse HR-pQCT, noise reduction is achieved by Gaussian smoothing, instead of the common minimum cluster size filtering. Our results showed better performance (*i.e., smaller errors and noise, higher sensitivity*) compared to other methods.
+In this implementation of timelapse HR-pQCT, noise reduction is achieved by Gaussian smoothing, instead of the common minimum cluster size filtering.
 
 The image below shows examples of the timelapse HR-pQCT using the Gaussian smoothing (*left column*) compared to minimum cluster size filtering (*details in the paper*):
 
