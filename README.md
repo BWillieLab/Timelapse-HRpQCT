@@ -2,7 +2,9 @@
 
 ---
 
-Python implementation of HR-pQCT timelapse analysis for quantifying bone formation and resorption:
+Python implementation of HR-pQCT timelapse analysis for quantifying bone formation and resorption.
+
+**When using the code, please cite:**
 
 ***S. Hosseinitabatabaei, I. Vitienes, M. Rummler, A. Birkhold, F.Rauch, BM. Willie, Non-invasive quantification of bone (re)modeling dynamics in adults with osteogenesis imperfecta treated with setrusumab using timelapse high-resolution peripheral-quantitative computed tomography, JBMR, 2025 \[(https://academic.oup.com/jbmr/article/40/3/348/7978263)\]***
 
