@@ -3,6 +3,9 @@
   "parameters": {
     "timepoint1": "Bsl",
     "timepoint2": "6M",
+    "timepoint3": "12M",
+    "timepoint4": "18M",
+    "timepoint5": "24M",
     "sigma": 1.2,
     "component": "Total",
     "mask": "same",
