@@ -20,6 +20,27 @@ This package can perform timelapse analysis using either grayscale or binary inp
 - **Minimum cluster size:** 0
 - **Gaussian sigma:** 0.8 for XCT and 1.2 for XCT2
 
+---
+
+> **⚠️ Attention:**  
+> **Before starting to use the timelapse analyses two consecutive images must be registered. Registration using various methods is possible; however, in our work we used 3D rigid image registration. Codes can be found to perform this registration at: https://github.com/BWillieLab/3D-MA-registered-HR-pQCT**
+> 
+> ---
+>  **⚠️ Attention:** 
+> This repository contains two main branches:  
+> 
+> - `2scan_timelapse` – original pipeline for 2 timelapse scans (default).  
+> - `5scan_timelapse` – expanded pipeline supporting up to 5 consecutive scans (i.e., each timepoint is registered to its previous timepoint, rather than having all scans registered to baseline).  
+> 
+> **To see or switch branches:** click the branch dropdown near the top-left of the GitHub repo page
+> 
+> Users should choose the branch that matches their dataset size. The branches are maintained separately to preserve version-specific functionality.  
+> Follow the instructions in the branch’s README or examples folder for running the pipeline.
+
+
+---
+
+
 ## Dependencies
 
 
@@ -62,6 +83,9 @@ parent_folder/
 	└── 8_seg2.aim
 ```
 
+> **⚠️ Attention:**  
+> The binary files including _seg.aim, cortmask.aim, and trabmask.aim should not be compressed when generated in IPL. Otherwise, the AIM_READER.py function cannot read the files.
+> 
 
 ## Installation & Usage
 
@@ -126,7 +150,7 @@ pip install library-name
 | `sigma` | Gaussian filter sigma (use 0.8 for XCT, 1.2 for XCT2) |
 | `component` | Bone compartment to analyze (`Total`, `Cortical`, `Trabecular`) |
 | `mask` | Whether the periosteal mask is the same (`same`) or different |
-| `cort_mask` | Same or different cortical masks (`same`, `different`, or `na` if not used) |
+| `cort_mask` | Same or different cortical masks (`same`, `different`, or `na` if not used. Use `same_perio`, `same_endo` if the periosteal or endosteal surfaces are selected using cort_surface) |
 | `cort_surface` | Cortical surface type (`perio`, `endo`, `both`, or `na`) |
 | `thresh` | Density threshold for segmentation (e.g., 200) |
 | `cluster` | Minimum cluster size to retain (e.g., 0 = no filtering) |
